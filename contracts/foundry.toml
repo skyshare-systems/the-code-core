@@ -1,0 +1,21 @@
+[profile.default]
+src = "src"
+out = "out"
+ffi = true
+ast = true
+build_info = true
+libs = ["lib"]
+fs_permissions = [{ access = "read-write", path = "./"}]
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+[rpc_endpoints]
+sepolia = "${RPC_URL}"
+skyshares = "${RPC_URL}"
+polygon = "${RPC_URL}"
+local = "${RPC_URL}"
+tcore2 = "${RPC_URL}"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
+polygon = { key = "${ETHERSCAN_API_KEY}" }
+tcore2 = { key = "${ETHERSCAN_API_KEY}",  chain = 1114, url = "https://scan.test.btcs.network/api"  }

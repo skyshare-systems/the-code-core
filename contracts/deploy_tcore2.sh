@@ -1,0 +1,1 @@
+forge script script/tcore2.s.sol:DeploymentScript --via-ir --rpc-url tcore2 --broadcast --slow --no-cache --legacy
